@@ -1,0 +1,96 @@
+.navbar{
+    height:4rem;
+    width:100%;
+    /* max-width:75rem; */
+    display:flex;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 3;
+    top:0;
+    /* margin:0rem 1rem; */
+    position: sticky;
+    background:rgb(40,40,40);
+    padding: 0 1rem;
+    /* border-radius: 1rem; */
+    
+
+   
+}
+.logo{
+    
+    object-fit:cover;
+    height:3.5rem;
+    width: 3.5rem;
+    margin-top: 0.25rem;
+}
+.desktopMenuItems{
+    cursor:pointer;
+    margin:1rem;
+    
+}
+.desktopMenuItems:hover{
+    cursor:pointer;
+    color:yellow;
+    border-bottom: 1px solid yellow;
+    font-weight: 500;
+}
+.contactMeButton{
+    background-color:white;
+    width:10rem;
+    height:3rem;
+    border-radius:2rem;
+    cursor:pointer;
+    border:none;
+    color: black;
+    padding: 0rem 1rem;
+    margin:0.5rem 0;
+
+}
+.menu{
+    display: flex;
+
+}
+.active{
+    color:yellow;
+    /* text-decoration: underline; */
+}
+.mobMenuImg{
+    display: none;
+    position: absolute;
+    top:1rem;
+    right:1rem;
+    object-fit: cover;
+    height:2rem;
+}
+.mobMenu{
+    background:rgb(40,40,40);
+    width:15rem;
+    max-width:100vw;
+    position:absolute;
+    top:4rem;
+    right:1rem;
+    display: none;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    border-radius: 1rem;
+    text-align: center;
+}
+.mobMenuItem{
+    margin: 0.25rem;
+    padding: 0.5rem;
+    background: rgb(30,30,30);
+    border-radius: 1rem;
+    width: 10rem;
+}
+@media screen and (max-width:640px){
+    .mobMenuImg{
+        display: flex;
+    }
+    .desktopMenuItems{
+        display: none;
+    }
+    .contactMeButton{
+        display: none;
+    }
+}

@@ -1,0 +1,74 @@
+
+#intro{
+    height:calc(100vh-4rem);
+    width:100vw;
+    max-width: 75rem;
+    margin:1rem auto;
+    overflow:hidden;
+    position: relative;
+}
+.myImg{
+    position:absolute;
+    top:-0.1rem;
+    right:0;
+    z-index:-1;
+    object-fit:cover;
+    height:80vh;
+}
+.myImageContainer{
+    height:100vh;
+}
+.introContent{
+    
+    height: 100vh;
+    width:100vw;
+    padding:2rem;
+    font-size:3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    /* justify-content:space-around */
+
+}
+.aboutMe{
+    margin-top: 12rem;
+}
+.hireMeButton{
+    border-radius: 2rem;
+    /* width:10vw; */
+    background-color: white;
+    cursor: pointer;
+    border:none;
+    margin: 1rem 0;
+    padding:0.75rem 2rem;
+}
+
+.hireMeImage{
+    margin:0 0.5rem;
+    height:1.5rem;
+    margin-top: 0.25rem;
+}
+.hello{
+    font-size:1.75rem;
+    font-weight: 300;
+}
+.name{
+    color:yellow;
+}
+.hireMeText{
+    position:relative;
+    top:30%;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 1rem;
+}
+@media screen and (max-width:840px){
+    .myImg{
+        right:-10vw;
+    }
+}
+@media screen and (max-width:480px){
+    .myImg{
+        right:-30vw;
+    }
+}
